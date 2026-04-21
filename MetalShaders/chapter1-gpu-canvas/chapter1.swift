@@ -56,7 +56,6 @@ struct Brightness: View {
                 .scaledToFit()
                 .colorEffect(ShaderLibrary.adjustableBrightness(.float(brightness)))
             
-            
             Text("Brightness: \(brightness)")
             Slider(value: $brightness, in: 0...1)
                 .padding()
@@ -66,10 +65,7 @@ struct Brightness: View {
 
 struct ColorChannelIsolation: View {
     enum ShaderType: String, CaseIterable {
-        case original
-        case red
-        case green
-        case blue
+        case original, red, green, blue
         
         var shader: Shader {
             switch self {
@@ -92,7 +88,6 @@ struct ColorChannelIsolation: View {
                 .resizable()
                 .scaledToFit()
                 .colorEffect(picker.shader)
-//                .colorEffect(ShaderFunction(library: ShaderLibrary.default, name: <#T##String#>))
             
             Picker(selection: $picker) {
                 ForEach(ShaderType.allCases, id: \.self) { type in

@@ -7,26 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4267A9B2F979E1200E8E96F /* chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267A8F2F979E1200E8E96F /* chapter1.swift */; };
+		F4267A9C2F979E1200E8E96F /* ShadersCH1.metal in Sources */ = {isa = PBXBuildFile; fileRef = F4267A902F979E1200E8E96F /* ShadersCH1.metal */; };
+		F4267A9D2F979E1200E8E96F /* chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267A922F979E1200E8E96F /* chapter2.swift */; };
+		F4267A9E2F979E1200E8E96F /* ShaderCH2.metal in Sources */ = {isa = PBXBuildFile; fileRef = F4267A932F979E1200E8E96F /* ShaderCH2.metal */; };
+		F4267A9F2F979E1200E8E96F /* chapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267A952F979E1200E8E96F /* chapter3.swift */; };
+		F4267AA02F979E1200E8E96F /* ShaderCH3.metal in Sources */ = {isa = PBXBuildFile; fileRef = F4267A962F979E1200E8E96F /* ShaderCH3.metal */; };
+		F4267AA12F979E1200E8E96F /* CommonShaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267A982F979E1200E8E96F /* CommonShaders.swift */; };
+		F4267AA22F979E1200E8E96F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267A992F979E1200E8E96F /* String.swift */; };
+		F4267AA52F979E2B00E8E96F /* HelperFuncs.metal in Sources */ = {isa = PBXBuildFile; fileRef = F4267AA32F979E2B00E8E96F /* HelperFuncs.metal */; };
 		F43E663B2EA6066900DB69CF /* MetalShadersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E663A2EA6066900DB69CF /* MetalShadersApp.swift */; };
 		F43E663D2EA6066900DB69CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E663C2EA6066900DB69CF /* ContentView.swift */; };
 		F43E663F2EA6066B00DB69CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43E663E2EA6066B00DB69CF /* Assets.xcassets */; };
 		F43E66422EA6066B00DB69CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */; };
-		F43E664A2EA606BD00DB69CF /* ShadersCH1.metal in Sources */ = {isa = PBXBuildFile; fileRef = F43E66482EA606BD00DB69CF /* ShadersCH1.metal */; };
-		F43E66562EA6231500DB69CF /* chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E66552EA6231500DB69CF /* chapter1.swift */; };
-		F4BAD7422EA74E6F007D6F65 /* ShadersCH2.metal in Sources */ = {isa = PBXBuildFile; fileRef = F4BAD7412EA74E6F007D6F65 /* ShadersCH2.metal */; };
-		F4BAD7442EA7573C007D6F65 /* chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BAD7432EA7573C007D6F65 /* chapter2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4267A8F2F979E1200E8E96F /* chapter1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chapter1.swift; sourceTree = "<group>"; };
+		F4267A902F979E1200E8E96F /* ShadersCH1.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShadersCH1.metal; sourceTree = "<group>"; };
+		F4267A922F979E1200E8E96F /* chapter2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chapter2.swift; sourceTree = "<group>"; };
+		F4267A932F979E1200E8E96F /* ShaderCH2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShaderCH2.metal; sourceTree = "<group>"; };
+		F4267A952F979E1200E8E96F /* chapter3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chapter3.swift; sourceTree = "<group>"; };
+		F4267A962F979E1200E8E96F /* ShaderCH3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShaderCH3.metal; sourceTree = "<group>"; };
+		F4267A982F979E1200E8E96F /* CommonShaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonShaders.swift; sourceTree = "<group>"; };
+		F4267A992F979E1200E8E96F /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F4267AA32F979E2B00E8E96F /* HelperFuncs.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HelperFuncs.metal; sourceTree = "<group>"; };
+		F4267AA42F979E2B00E8E96F /* HelperFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFuncs.h; sourceTree = "<group>"; };
 		F43E66372EA6066900DB69CF /* MetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43E663A2EA6066900DB69CF /* MetalShadersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalShadersApp.swift; sourceTree = "<group>"; };
 		F43E663C2EA6066900DB69CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F43E663E2EA6066B00DB69CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F43E66482EA606BD00DB69CF /* ShadersCH1.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ShadersCH1.metal; sourceTree = "<group>"; };
-		F43E66552EA6231500DB69CF /* chapter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter1.swift; sourceTree = "<group>"; };
-		F4BAD7412EA74E6F007D6F65 /* ShadersCH2.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShadersCH2.metal; sourceTree = "<group>"; };
-		F4BAD7432EA7573C007D6F65 /* chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chapter2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4267A912F979E1200E8E96F /* chapter1-gpu-canvas */ = {
+			isa = PBXGroup;
+			children = (
+				F4267A8F2F979E1200E8E96F /* chapter1.swift */,
+				F4267A902F979E1200E8E96F /* ShadersCH1.metal */,
+			);
+			path = "chapter1-gpu-canvas";
+			sourceTree = "<group>";
+		};
+		F4267A942F979E1200E8E96F /* chapter2-Coordinate System */ = {
+			isa = PBXGroup;
+			children = (
+				F4267A922F979E1200E8E96F /* chapter2.swift */,
+				F4267A932F979E1200E8E96F /* ShaderCH2.metal */,
+			);
+			path = "chapter2-Coordinate System";
+			sourceTree = "<group>";
+		};
+		F4267A972F979E1200E8E96F /* chapter3-Color Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+				F4267A952F979E1200E8E96F /* chapter3.swift */,
+				F4267A962F979E1200E8E96F /* ShaderCH3.metal */,
+			);
+			path = "chapter3-Color Mathematics";
+			sourceTree = "<group>";
+		};
+		F4267A9A2F979E1200E8E96F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4267A982F979E1200E8E96F /* CommonShaders.swift */,
+				F4267A992F979E1200E8E96F /* String.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F43E662E2EA6066900DB69CF = {
 			isa = PBXGroup;
 			children = (
@@ -59,11 +106,15 @@
 		F43E66392EA6066900DB69CF /* MetalShaders */ = {
 			isa = PBXGroup;
 			children = (
-				F43E663A2EA6066900DB69CF /* MetalShadersApp.swift */,
-				F43E663C2EA6066900DB69CF /* ContentView.swift */,
-				F43E66492EA606BD00DB69CF /* chapter1-gpu-canvas */,
-				F4BAD7402EA74E48007D6F65 /* chapter2-Coordinate System */,
+				F4267A912F979E1200E8E96F /* chapter1-gpu-canvas */,
+				F4267A942F979E1200E8E96F /* chapter2-Coordinate System */,
+				F4267A972F979E1200E8E96F /* chapter3-Color Mathematics */,
+				F4267A9A2F979E1200E8E96F /* Helpers */,
 				F43E663E2EA6066B00DB69CF /* Assets.xcassets */,
+				F4267AA42F979E2B00E8E96F /* HelperFuncs.h */,
+				F4267AA32F979E2B00E8E96F /* HelperFuncs.metal */,
+				F43E663C2EA6066900DB69CF /* ContentView.swift */,
+				F43E663A2EA6066900DB69CF /* MetalShadersApp.swift */,
 				F43E66402EA6066B00DB69CF /* Preview Content */,
 			);
 			path = MetalShaders;
@@ -75,24 +126,6 @@
 				F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F43E66492EA606BD00DB69CF /* chapter1-gpu-canvas */ = {
-			isa = PBXGroup;
-			children = (
-				F43E66482EA606BD00DB69CF /* ShadersCH1.metal */,
-				F43E66552EA6231500DB69CF /* chapter1.swift */,
-			);
-			path = "chapter1-gpu-canvas";
-			sourceTree = "<group>";
-		};
-		F4BAD7402EA74E48007D6F65 /* chapter2-Coordinate System */ = {
-			isa = PBXGroup;
-			children = (
-				F4BAD7412EA74E6F007D6F65 /* ShadersCH2.metal */,
-				F4BAD7432EA7573C007D6F65 /* chapter2.swift */,
-			);
-			path = "chapter2-Coordinate System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,11 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43E664A2EA606BD00DB69CF /* ShadersCH1.metal in Sources */,
-				F4BAD7422EA74E6F007D6F65 /* ShadersCH2.metal in Sources */,
-				F43E66562EA6231500DB69CF /* chapter1.swift in Sources */,
+				F4267A9D2F979E1200E8E96F /* chapter2.swift in Sources */,
+				F4267A9B2F979E1200E8E96F /* chapter1.swift in Sources */,
 				F43E663D2EA6066900DB69CF /* ContentView.swift in Sources */,
-				F4BAD7442EA7573C007D6F65 /* chapter2.swift in Sources */,
+				F4267AA52F979E2B00E8E96F /* HelperFuncs.metal in Sources */,
+				F4267A9F2F979E1200E8E96F /* chapter3.swift in Sources */,
+				F4267AA02F979E1200E8E96F /* ShaderCH3.metal in Sources */,
+				F4267AA22F979E1200E8E96F /* String.swift in Sources */,
+				F4267A9E2F979E1200E8E96F /* ShaderCH2.metal in Sources */,
+				F4267A9C2F979E1200E8E96F /* ShadersCH1.metal in Sources */,
+				F4267AA12F979E1200E8E96F /* CommonShaders.swift in Sources */,
 				F43E663B2EA6066900DB69CF /* MetalShadersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,33 +6,36 @@
 //
 
 #include <metal_stdlib>
-using namespace metal;
-//                                       position of pixel, color of pixel
-//                                                |              |
-//[[ stitchable ]] half4 <functionName>(float2 position, half4 color)
+#include "../HelperFuncs.h"
 
+using namespace metal;
+/*
+                                       position of pixel, color of pixel
+                                                |              |
+[[ stitchable ]] half4 <functionName>(float2 position, half4 color)
+*/
 [[ stitchable ]] half4 solidRed(float2 position, half4 color) {
-    return half4(1.0, 0.0, 0.0, 1.0);
+    return Colors::red;
 }
 
 [[ stitchable ]] half4 solidGreen(float2 position, half4 color) {
-    return half4(0.0, 1.0, 0.0, 1.0);
+    return Colors::green;
 }
 
 [[ stitchable ]] half4 solidBlue(float2 position, half4 color) {
-    return half4(0.0, 0.0, 1.0, 1.0);
+    return Colors::blue;
 }
 
 [[ stitchable ]] half4 solidColor(float2 position, half4 color, float colorT) {
     switch (int(colorT)) {
         case 0:
-            return half4(1.0, 0.0, 0.0, 1.0);
+            return Colors::red;
         case 1:
-            return half4(0.0, 1.0, 0.0, 1.0);
+            return Colors::green;
         case 2:
-            return half4(0.0, 0.0, 1.0, 1.0);
+            return Colors::blue;
     }
-    return half4(1.0, 1.0, 1.0, 1.0);
+    return color;
 }
 
 [[ stitchable ]] half4 adjustableBrightness(float2 position, half4 color, float brightness) {
@@ -61,3 +64,5 @@ using namespace metal;
 [[ stitchable ]] half4 pulsingColor(float2 position, half4 color, float time) {
     return half4(time, 0, 1-time, color.a);
 }
+
+
