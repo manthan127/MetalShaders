@@ -12,7 +12,7 @@ protocol CommonShaders: Identifiable, CaseIterable, RawRepresentable where RawVa
 extension CommonShaders {
     var id: String { rawValue }
     
-    func shader(_ arguments: [Shader.Argument]) -> Shader {
+    func shader(_ arguments: Shader.Argument...) -> Shader {
         Shader(
             function: .init(library: .default, name: rawValue),
             arguments: arguments

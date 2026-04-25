@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct Chapter2Shaders: View {
     enum ShaderType: String, CommonShaders {
         case smoothCircle, circle, gridPattern, radialPattern
@@ -21,7 +20,7 @@ struct Chapter2Shaders: View {
         VStack {
             Rectangle()
                 .visualEffect { content, proxy in
-                    content.colorEffect(selectedShader.shader([.float2(proxy.size)]))
+                    content.colorEffect(selectedShader.shader(.float2(proxy.size)))
                 }
                 .scaledToFit()
                 .border(.red)
@@ -44,7 +43,7 @@ struct SpotlightView: View {
         GeometryReader { geo in
             Rectangle()
                 .visualEffect { content, proxy in
-                    content.colorEffect(ShaderLibrary.spotlight(
+                    content.colorEffect(MetalLibs.visible.spotlight(
                         .float2(proxy.size),
                         .float2(lightPos)
                     ))
@@ -68,7 +67,7 @@ struct RotatingPatternView: View {
     var body: some View {
         //TimelineView(.animation) { timeline in
         Rectangle().visualEffect { content, proxy in
-            content.colorEffect(ShaderLibrary.rotatingPattern(
+            content.colorEffect(MetalLibs.visible.rotatingPattern(
                 .float2(proxy.size),
                 .float(time)
                 //.float(timeline.date.timeIntervalSinceReferenceDate)

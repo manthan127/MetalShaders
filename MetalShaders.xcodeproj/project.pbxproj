@@ -20,6 +20,10 @@
 		F43E663D2EA6066900DB69CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E663C2EA6066900DB69CF /* ContentView.swift */; };
 		F43E663F2EA6066B00DB69CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43E663E2EA6066B00DB69CF /* Assets.xcassets */; };
 		F43E66422EA6066B00DB69CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */; };
+		F48DD6082F9C753B003FACC0 /* default-macOS.metallib in Resources */ = {isa = PBXBuildFile; fileRef = F48DD6072F9C753B003FACC0 /* default-macOS.metallib */; };
+		F49C1FBD2F99F23700646BD9 /* Metallib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C1FBC2F99F23700646BD9 /* Metallib.swift */; };
+		F49C1FBF2F99F39600646BD9 /* UIKitTest-iOS.metallib in Resources */ = {isa = PBXBuildFile; fileRef = F49C1FBE2F99F39600646BD9 /* UIKitTest-iOS.metallib */; };
+		F49C1FC22F99F67F00646BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C1FC12F99F67F00646BD9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		F43E663C2EA6066900DB69CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F43E663E2EA6066B00DB69CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F48DD6072F9C753B003FACC0 /* default-macOS.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = "default-macOS.metallib"; sourceTree = "<group>"; };
+		F49C1FBC2F99F23700646BD9 /* Metallib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metallib.swift; sourceTree = "<group>"; };
+		F49C1FBE2F99F39600646BD9 /* UIKitTest-iOS.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = "UIKitTest-iOS.metallib"; sourceTree = "<group>"; };
+		F49C1FC12F99F67F00646BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +117,15 @@
 				F4267A912F979E1200E8E96F /* chapter1-gpu-canvas */,
 				F4267A942F979E1200E8E96F /* chapter2-Coordinate System */,
 				F4267A972F979E1200E8E96F /* chapter3-Color Mathematics */,
+				F49C1FBB2F99F21F00646BD9 /* Generated */,
 				F4267A9A2F979E1200E8E96F /* Helpers */,
 				F43E663E2EA6066B00DB69CF /* Assets.xcassets */,
 				F4267AA42F979E2B00E8E96F /* HelperFuncs.h */,
 				F4267AA32F979E2B00E8E96F /* HelperFuncs.metal */,
+				F49C1FBE2F99F39600646BD9 /* UIKitTest-iOS.metallib */,
+				F48DD6072F9C753B003FACC0 /* default-macOS.metallib */,
 				F43E663C2EA6066900DB69CF /* ContentView.swift */,
+				F49C1FC12F99F67F00646BD9 /* ViewController.swift */,
 				F43E663A2EA6066900DB69CF /* MetalShadersApp.swift */,
 				F43E66402EA6066B00DB69CF /* Preview Content */,
 			);
@@ -126,6 +138,14 @@
 				F43E66412EA6066B00DB69CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F49C1FBB2F99F21F00646BD9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F49C1FBC2F99F23700646BD9 /* Metallib.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43E66422EA6066B00DB69CF /* Preview Assets.xcassets in Resources */,
+				F48DD6082F9C753B003FACC0 /* default-macOS.metallib in Resources */,
+				F49C1FBF2F99F39600646BD9 /* UIKitTest-iOS.metallib in Resources */,
 				F43E663F2EA6066B00DB69CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +227,8 @@
 				F4267A9F2F979E1200E8E96F /* chapter3.swift in Sources */,
 				F4267AA02F979E1200E8E96F /* ShaderCH3.metal in Sources */,
 				F4267AA22F979E1200E8E96F /* String.swift in Sources */,
+				F49C1FBD2F99F23700646BD9 /* Metallib.swift in Sources */,
+				F49C1FC22F99F67F00646BD9 /* ViewController.swift in Sources */,
 				F4267A9E2F979E1200E8E96F /* ShaderCH2.metal in Sources */,
 				F4267A9C2F979E1200E8E96F /* ShadersCH1.metal in Sources */,
 				F4267AA12F979E1200E8E96F /* CommonShaders.swift in Sources */,

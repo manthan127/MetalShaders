@@ -1,0 +1,5 @@
+metal:
+  inputs: MetalShaders/
+  outputs:
+    templateName: swift5
+    output: MetalShaders/Generated/Metallib.swift

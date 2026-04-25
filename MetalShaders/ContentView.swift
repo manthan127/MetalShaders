@@ -32,7 +32,9 @@ struct ContentView: View {
         Chapter(title: "Chapter 3: Color Mathematics", examples: [
             ChapterExample(title: "Chapter 3 Shaders", viewBuilder: { AnyView(Chapter3Shaders()) }),
         ]),
-        
+        Chapter(title: "UIKit", examples: [
+            ChapterExample(title: "Triangle", viewBuilder: { AnyView(UIKitShader()) })
+        ])
     ]
     
     var body: some View {

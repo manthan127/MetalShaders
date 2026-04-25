@@ -27,7 +27,7 @@ struct Chapter3Shaders: View {
             .resizable()
             .scaledToFit()
             .visualEffect { content, proxy in
-                content.colorEffect(selectedShader.shader([.float2(proxy.size)]))
+                content.colorEffect(selectedShader.shader(.float2(proxy.size)))
             }
         
         Picker("Shader", selection: $selectedShader) {

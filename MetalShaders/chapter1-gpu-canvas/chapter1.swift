@@ -12,7 +12,7 @@ struct chapter1: View {
     
     var body: some View {
         Rectangle()
-            .colorEffect(ShaderLibrary.solidColor(.float(Float(x))))
+            .colorEffect(MetalLibs.visible.solidColor(.float(Float(x))))
             .aspectRatio(contentMode: .fit)
             .padding()
         
@@ -54,7 +54,7 @@ struct Brightness: View {
             Image(.sample)
                 .resizable()
                 .scaledToFit()
-                .colorEffect(ShaderLibrary.adjustableBrightness(.float(brightness)))
+                .colorEffect(MetalLibs.visible.adjustableBrightness(.float(brightness)))
             
             Text("Brightness: \(brightness)")
             Slider(value: $brightness, in: 0...1)
@@ -70,13 +70,13 @@ struct ColorChannelIsolation: View {
         var shader: Shader {
             switch self {
             case .original:
-                ShaderLibrary.OG()
+                MetalLibs.visible.OG()
             case .red:
-                ShaderLibrary.redChannel()
+                MetalLibs.visible.redChannel()
             case .green:
-                ShaderLibrary.greenChannel()
+                MetalLibs.visible.greenChannel()
             case .blue:
-                ShaderLibrary.blueChannel()
+                MetalLibs.visible.blueChannel()
             }
         }
     }
@@ -111,11 +111,11 @@ struct FlagCreator: View {
         VStack {
             HStack(spacing: 0) {
                 Rectangle()
-                    .colorEffect(ShaderLibrary.flagsColor(.color(Left)))
+                    .colorEffect(MetalLibs.visible.flagsColor(.color(Left)))
                 Rectangle()
-                    .colorEffect(ShaderLibrary.flagsColor(.color(Middle)))
+                    .colorEffect(MetalLibs.visible.flagsColor(.color(Middle)))
                 Rectangle()
-                    .colorEffect(ShaderLibrary.flagsColor(.color(Right)))
+                    .colorEffect(MetalLibs.visible.flagsColor(.color(Right)))
             }
             .border(.black)
             .aspectRatio(16/9, contentMode: .fit)
@@ -143,7 +143,7 @@ struct AnimatedPulse: View {
                 VStack(alignment: .leading) {
                     Rectangle()
                         .scaledToFit()
-                        .colorEffect(ShaderLibrary.pulsingColor(
+                        .colorEffect(MetalLibs.visible.pulsingColor(
                             .float(abs(sin(timeline.date.timeIntervalSinceReferenceDate))) 
                         ))
                 }
